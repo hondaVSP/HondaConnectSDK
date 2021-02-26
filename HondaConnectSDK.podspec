@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HondaConnectSDK'
-  s.version = '0.0.4'
+  s.version = '0.0.5'
   s.summary          = 'HondaConnectSDK'
 
 # This description is used to generate tags and improve search results.
@@ -25,12 +25,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.vendored_frameworks = 'HondaConnectSDK.framework'
   s.frameworks = 'Foundation','UIKit','CoreLocation','Security','CoreTelephony','SystemConfiguration','JavaScriptCore','WebKit'
-  s.static_framework = true
-
-  s.pod_target_xcconfig = {
-    'OTHER_LDFLAGS' => '-lObjC',
-    'VALID_ARCHS' => 'x86_64 armv7 arm64'
-  }
 
   s.dependency 'MJExtension'
   s.dependency 'AFNetworking/Reachability'
