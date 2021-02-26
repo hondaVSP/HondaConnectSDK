@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 页面push，参数放入parameters里，控制器名称设置viewControllerName即可
 - (void)pushWithViewModel:(HCViewModel *)viewModel animated:(BOOL)animated;
 
+/// 页面push，参数放入parameters里，控制器名称设置viewControllerName即可，successBlock成功回调，failureBlock失败回调
+- (void)pushWithViewModel:(HCViewModel *)viewModel animated:(BOOL)animated onSuccess:(void(^ __nullable)(void))successBlock onFailure:(void(^ __nullable)(void))failureBlock;
+
 /// 页面pop，参数放入parameters，控制器名称设置viewControllerName即可
 - (void)popWithViewModel:(HCViewModel *)viewModel animated:(BOOL)animated;
 
