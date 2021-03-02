@@ -10,8 +10,6 @@
 #import "HCCoreRpcProtocol.h"
 #import "HCRpcContext.h"
 #import <CoreLocation/CoreLocation.h>
-//#import "HMCommonResult.h"
-//@class BaseViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 
