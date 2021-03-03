@@ -14,6 +14,10 @@
 #define COLOR_BG_F5F5F8     [UIColor colorWithHexString:@"f5f5f8"]
 #define COLOR_BG_034D9F     [UIColor colorWithHexString:@"034d9f"]  //首页顶部蓝底
 
+/// QMapView的strokeColor和fillColor
+#define COLOR_94C6FF        [UIColor colorWithHexString:@"94c6ff"]
+#define COLOR_2565AC        [UIColor colorWithHexString:@"2565ac"]
+
 /// 分割线颜色
 #define COLOR_E4E4E4        [UIColor colorWithHexString:@"e4e4e4"] //[分割线1]白色内容中的分割线，例：列表页面等
 #define COLOR_DADADD        [UIColor colorWithHexString:@"dadadd"] //自定义弹窗 分割线颜色

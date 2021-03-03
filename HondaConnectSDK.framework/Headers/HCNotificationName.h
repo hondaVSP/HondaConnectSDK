@@ -24,6 +24,12 @@ extern NSString *kHCNotificationRpcTokenInvalid;
 /// 车辆列表变化通知
 extern NSString *kHCNotificationVehicleListChanged;
 
+/// 绑车成功通知
+extern NSString *kHCNotificationVehicleBindSucceed;
+
+/// 绑车失败通知
+extern NSString *kHCNotificationVehicleBindFailed;
+
 /// 控车成功通知
 extern NSString *kHCNotificationCarControlSuccess;
 /// 控车失败通知
