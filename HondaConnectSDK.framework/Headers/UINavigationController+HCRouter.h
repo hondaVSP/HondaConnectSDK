@@ -33,8 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 页面present
 - (void)presentWithViewModel:(HCViewModel *)viewModel animated:(BOOL)animated completion:(void (^ __nullable)(void))completion;
 
-// 页面dismiss
+/// 页面dismiss
 - (void)dismissWithViewModel:(HCViewModel *)viewModel animated:(BOOL)animated completion:(void (^ __nullable)(void))completion;
+
+/// 移出导航栈
+- (void)removeViewControllerClass:(Class _Nonnull)cls;
 
 
 @end
