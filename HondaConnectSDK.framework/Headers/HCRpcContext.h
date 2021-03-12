@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)invoke;
 
+- (BOOL)appInvoke;
+
 - (void)setReturnObject:(NSDictionary*)dict;
 
 - (void)setRequestDone:(BOOL)isOK;

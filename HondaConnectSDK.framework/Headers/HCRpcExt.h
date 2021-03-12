@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, HCRpcRequestMethod) {
 /**
  * 续租accessToken
  */
-//+ (void)invokeRefreshTokenOnSuccess:(void (^)(void))successBlock;
++ (void)invokeRefreshTokenOnSuccess:(void (^)(void))successBlock;
 
 /**
  * 执行RpcCache

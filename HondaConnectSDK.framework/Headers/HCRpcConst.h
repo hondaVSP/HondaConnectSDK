@@ -37,11 +37,19 @@
 #define HTTP_REQUEST_CODE_TOKEN_FORMAT          @"100020"
 /// 用户未注册
 #define HTTP_REQUEST_CODE_USER_UNREGISTER       @"300001"
+
 /**控车等待车机唤醒*/
 #define HTTP_REQUEST_CODE_WAITING_VEHICLE_AWAKON @"000001"
 /**车机唤醒成功*/
 #define HTTP_REQUEST_CODE_AWAKON_SUCCESS         @"200038"
 /**指令执行中 (车机收到指令)*/
 #define HTTP_REQUEST_CODE_INSTRUCTION_EXECUTING  @"200035"
+
+/// 当前用户没有队伍
+#define HTTP_REQUEST_CODE_NOT_HAVE_TEAM         @"705099"
+/// 非默认车辆已在队伍中，点击组队功能
+#define HTTP_REQUEST_CODE_HAS_JOIN_OTHER_TEAM   @"705027"
+/// 被授权车辆已经加入车队
+#define HTTP_REQUEST_CODE_VEHICLE_IN_TEAM       @"705032"
 
 #endif

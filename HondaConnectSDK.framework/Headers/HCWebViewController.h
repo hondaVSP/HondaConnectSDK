@@ -8,6 +8,7 @@
 
 #import "HCViewController.h"
 @class WKWebView;
+@class HCJavaScriptBridge;
 
 @interface HCWebLoadFailView : UIView
 
@@ -16,6 +17,7 @@
 @interface HCWebViewController : HCViewController
 
 @property(nonatomic,strong,readonly) WKWebView* webView;
+@property(nonatomic,strong,readonly) HCJavaScriptBridge* jsBridge;
 
 -(void) resetWebViewFrame;
 

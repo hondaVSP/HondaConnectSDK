@@ -55,6 +55,17 @@
 //空字符串判断（不包括空格）
 #define NULLStringWithoutWhitespace(string) ((![string isKindOfClass:[NSString class]]) || [string isEqualToString:@""] || (string == nil) ||  [string isKindOfClass:[NSNull class]])
 
+
+//字符空串保护
+#define safeNullString(str)\
+    ^(){\
+        if (NULLString(str)) {\
+            return @"";\
+        }else {\
+            return str;\
+        }\
+    }()
+
 //强弱引用
 #define kWeakSelf(type)  __weak typeof(type) weak##type = type;
 #define kStrongSelf(type) __strong typeof(type) type = weak##type;

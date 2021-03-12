@@ -30,16 +30,26 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong) NSMutableDictionary<NSString*, NSString*>* httpHeaders;
 
+/**
+ * token(访问令牌)
+ */
+@property (nonatomic, copy, readonly) NSString *token;
 
-///**
-// * 更新请求头(HTTPResponse)
-// */
-//+ (void) updateHttpHeadersWithHTTPResponse:(NSHTTPURLResponse *)urlResponse;
 
-///**
-// * 更新请求头(续租结果TokenModel)
-// */
-//+ (void) updateHttpHeadersWithTokenModel:(HCTokenModel *)tokenModel;
+/**
+ * 更新请求头(HTTPResponse)(App调用)
+ */
++ (void) updateHttpHeadersWithHTTPResponse:(NSHTTPURLResponse *)urlResponse;
+
+/**
+ * 更新请求头(续租结果TokenModel)(App调用)
+ */
++ (void) updateHttpHeadersWithTokenModel:(HCTokenModel *)tokenModel;
+
+/**
+ * 临时放到h文件，等hc3.0请求替换完成，放入m文件里
+ */
++ (void) updateHttpHeadersWithAccessToken:(NSString *)accessToken withRefreshToken:(NSString *)refreshToken;
 
 /**
  * 更新请求头(SDK使用者调用)

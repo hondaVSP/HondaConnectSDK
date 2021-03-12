@@ -130,6 +130,19 @@ NS_ASSUME_NONNULL_BEGIN
                                     onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
                                     onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
+/**获取车载导航记录列表*/
++ (id<HCRpcContextProtocl>)getNavigationRecordsWithVinCode:(NSString *)vinCode
+                                                      page:(NSInteger)page
+                                                 onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                                 onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/**获取导航详情*/
++ (id<HCRpcContextProtocl>)getNavigationDetailWithVinCode:(NSString *)vinCode
+                                                startTime:(long)startTime
+                                                  endTime:(long)endTime
+                                                onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                                onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

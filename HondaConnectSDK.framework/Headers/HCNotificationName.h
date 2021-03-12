@@ -6,18 +6,6 @@
 //  Copyright © 2020 东软睿驰汽车技术有限公司. All rights reserved.
 //
 
-#pragma mark - 用户相关
-
-/// 登陆被踢出
-extern NSString *kNotificationUserBeKictedOut;
-
-///// 主动退出登陆
-//extern NSString *kNotificationUserLogOut;
-//
-//
-
-/// token失效通知
-extern NSString *kHCNotificationRpcTokenInvalid;
 
 #pragma mark - 车辆相关
 

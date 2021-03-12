@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)popWithViewModel:(HCViewModel *)viewModel animated:(BOOL)animated;
 
 /// 页面pop，无传值参数
-- (void)popWithViewControllersName:(NSString *)viewControllerName
+- (BOOL)popWithViewControllersName:(NSString *)viewControllerName
                           animated:(BOOL)animated;
 
 /// 页面present
@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 移出导航栈
 - (void)removeViewControllerClass:(Class _Nonnull)cls;
+
+/// 批量移出导航栈
+- (void)batchRemoveViewControllerClass:(NSArray<Class> *)clsArray;
 
 
 @end

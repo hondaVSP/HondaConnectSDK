@@ -58,7 +58,15 @@ typedef NS_ENUM(NSInteger, HMNetworkStatus) {
 ///// 取消指定URL的HTTP请求
 //- (void)cancelRequestWithURL:(NSString *)URL;
 
+/**
+ * GHAC SDK调用
+ */
 + (BOOL)invoke:(HCRpcContext *)context;
+
+/**
+ * App调用
+ */
++ (BOOL)appInvoke:(HCRpcContext *)context;
 
 
 @end
