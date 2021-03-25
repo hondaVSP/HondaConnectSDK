@@ -131,6 +131,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param number string
 + (BOOL)validateNumber:(NSString *)number;
 
+/**有效手机号*/
++ (BOOL)validateTelephone:(NSString *)mobile;
+
 //获取当前的viewcontroller
 + (UIViewController *)getCurrentVC;
 

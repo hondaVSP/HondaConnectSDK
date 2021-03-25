@@ -14,3 +14,5 @@ extern NSString *kHCNotificationUserBeKictedOut;
 /// token失效通知
 extern NSString *kHCNotificationRpcTokenInvalid;
 
+/// App内部订阅
+extern NSString *kHCNotificationUserToLogin;

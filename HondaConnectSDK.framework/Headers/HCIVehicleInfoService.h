@@ -40,11 +40,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
+ * 查询车辆信息
+ */
++ (id<HCRpcContextProtocl>) getVehicleInfoWithVinCode:(NSString *)vinCode
+                                   onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                   onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+
+/**
  * 绑定车辆
  */
+//+ (id<HCRpcContextProtocl>) bindVehicle:(NSString *)secretInfo
+//                              onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+//                              onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/**
+ * 绑定车辆 SDK调用使用此方法
+ */
 + (id<HCRpcContextProtocl>) bindVehicle:(NSString *)secretInfo
-                              onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
-                              onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+                                vinCode:(NSString *)vinCode
+                        onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                        onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
 
 /**

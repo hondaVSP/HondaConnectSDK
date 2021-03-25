@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HCJavaScriptBridge : NSObject
 
-@property (nonatomic, strong, readonly) WKWebViewJavascriptBridge *bridge;
+@property (nonatomic, strong, readwrite) WKWebViewJavascriptBridge *bridge;
 
 -(instancetype) initWithView:(WKWebView *)view navigationDelegate:(id<WKNavigationDelegate>)delegate vc:(HCWebViewController *)vc;
 
