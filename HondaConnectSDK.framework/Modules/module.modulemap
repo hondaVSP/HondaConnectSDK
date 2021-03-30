@@ -1,0 +1,6 @@
+framework module HondaConnectSDK {
+  umbrella header "HondaConnectSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

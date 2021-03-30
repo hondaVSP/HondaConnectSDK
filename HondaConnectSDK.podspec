@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HondaConnectSDK'
-  s.version = '0.1.9'
+  s.version = '0.1.10'
   s.summary          = 'HondaConnectSDK'
 
 # This description is used to generate tags and improve search results.
@@ -25,6 +25,9 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'HondaConnectSDK.framework'
   s.frameworks = 'Foundation','UIKit','CoreLocation','Security','CoreTelephony','SystemConfiguration','JavaScriptCore','WebKit','CoreData','CoreServices'
 
+  s.static_framework = true
+
+  s.resource = '*.bundle'
 
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '-lObjC',
@@ -32,6 +35,22 @@ Pod::Spec.new do |s|
   }
 
   s.library = 'z','sqlite3.0'
+
+  s.dependency 'MJExtension'
+  s.dependency 'AFNetworking/Reachability'
+  s.dependency 'AFNetworking/Serialization'
+  s.dependency 'AFNetworking/Security'
+  s.dependency 'AFNetworking/NSURLSession'
+  s.dependency 'Masonry'
+  s.dependency 'KVOController'
+  s.dependency 'FDFullscreenPopGesture'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'Nimbus/Models'
+  s.dependency 'MJRefresh'
+  s.dependency 'DZNEmptyDataSet'
+  s.dependency 'MMMaterialDesignSpinner'
+  s.dependency 'WebViewJavascriptBridge'
+  s.dependency 'FMDB'
 
 
 end
