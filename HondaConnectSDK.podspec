@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HondaConnectSDK'
-  s.version = '0.1.7'
+  s.version = '0.1.8'
   s.summary          = 'HondaConnectSDK'
 
 # This description is used to generate tags and improve search results.
@@ -24,6 +24,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks = 'HondaConnectSDK.framework'
   s.frameworks = 'Foundation','UIKit','CoreLocation','Security','CoreTelephony','SystemConfiguration','JavaScriptCore','WebKit'
+
+  s.resources = '*.bundle'
 
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '-lObjC',
