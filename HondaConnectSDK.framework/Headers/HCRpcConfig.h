@@ -52,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) updateHttpHeadersWithAccessToken:(NSString *)accessToken withRefreshToken:(NSString *)refreshToken;
 
 /**
+ * 更新网关地址(SDK调用者使用)
+ */
++ (void) updateHttpGateway:(NSString *)gateway;
+
+/**
  * 更新请求头(SDK使用者调用)
  */
 + (void) updateHttpHeadersWithGHACToken:(NSString *)token;

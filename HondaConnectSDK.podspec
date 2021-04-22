@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HondaConnectSDK'
-  s.version = '0.1.11'
+  s.version = '0.1.12'
   s.summary          = 'HondaConnectSDK'
 
 # This description is used to generate tags and improve search results.
@@ -51,6 +51,9 @@ Pod::Spec.new do |s|
   s.dependency 'MMMaterialDesignSpinner'
   s.dependency 'WebViewJavascriptBridge'
   s.dependency 'FMDB'
+  s.dependency 'AliyunOSSiOS'
+  s.dependency 'CocoaLumberjack'
+
 
 
 end

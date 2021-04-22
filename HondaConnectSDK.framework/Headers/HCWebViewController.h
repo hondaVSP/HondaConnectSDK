@@ -18,8 +18,11 @@
 
 @property(nonatomic,strong,readonly) WKWebView* webView;
 @property(nonatomic,strong,readonly) HCJavaScriptBridge* jsBridge;
+@property(nonatomic,strong) UIProgressView *progressView;
 
 -(void) resetWebViewFrame;
+-(void) loadWebViewUrl:(NSString *)urlStr;
+-(void) showWebViewLoadFailPage;
 
 @end
 
