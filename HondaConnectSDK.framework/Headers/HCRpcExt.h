@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, HCRpcRequestMethod) {
 /**
  * 执行RpcCache
  */
-+ (BOOL)invokeRpcCache:(HCRpcContext *)context;
++ (BOOL)invokeRpcCache:(HCRpcContext *)context host:(NSString *)host;
 
 @end
 

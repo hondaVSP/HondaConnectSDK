@@ -6,7 +6,7 @@
 //  Copyright © 2021 445878662@qq.com. All rights reserved.
 //
 
-#import <WebViewJavascriptBridge/WKWebViewJavascriptBridge.h>
+#import <HCWebViewJavascriptBridge/HCWKWebViewJavascriptBridge.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol HCWKWebViewExtensionDelegate <NSObject>
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///收到服务器重定向
 - (void)hcWebView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation;
 @end
-@interface WKWebViewJavascriptBridge (HCExtension)
+@interface HCWKWebViewJavascriptBridge (HCExtension)
 
 @property (nonatomic, weak) id <HCWKWebViewExtensionDelegate> extensionDelegate;
 

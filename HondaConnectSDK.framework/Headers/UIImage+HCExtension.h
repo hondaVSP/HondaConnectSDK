@@ -22,6 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable UIImage *)imageByCropToRect:(CGRect)rect;
 
 
+/**
+ *  压缩图片尺寸
+ *  从VSPImagePicker中拿出来的方法
+ */
+- (UIImage *)compressImageWithSize:(CGSize)size;
+
 @end
 
 NS_ASSUME_NONNULL_END
