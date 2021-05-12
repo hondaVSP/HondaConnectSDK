@@ -26,6 +26,13 @@ typedef void(^VSPImagePickerCancelAction)(void);
                              finishAction:(VSPImagePickerFinishAction)finishAction
                              cancelAction:(VSPImagePickerCancelAction)cancelAction;
 
+/**
+ *  相机拍照
+ */
++ (void)showCameraImagePickerFromViewController:(UIViewController *)viewController
+                                   finishAction:(VSPImagePickerFinishAction)finishAction
+                                   cancelAction:(VSPImagePickerCancelAction)cancelAction;
+
 @end
 
 NS_ASSUME_NONNULL_END

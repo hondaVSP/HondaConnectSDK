@@ -16,7 +16,7 @@
 //#define HTTP_SERVER_GATEWAY         @"http://39.97.198.170:82/"
 //#define HTTP_SERVER_GATEWAY         @"https://vsp-test.reachstar.com:30191/"
 //#define HTTP_SERVER_GATEWAY         @"https://vsp-integration.reachstar.com:30191/"
-#define HTTP_SERVER_GATEWAY_FORMAL      @"https://openapi.hynex.com.cn:555/"
+#define HTTP_SERVER_GATEWAY_FORMAL      @"https://ghac-api-gateway.hynex.com.cn:443/"
 #define HTTP_SERVER_GATEWAY_SYSTEM      @"https://openapi-show.reachstar.com:555/"
 
 
