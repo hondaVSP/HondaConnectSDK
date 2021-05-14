@@ -65,7 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 查看或我获得的授权列表
 /// @param identity 身份(车主1, 非车主0)
+/// @param vinCode 车机码
 + (id<HCRpcContextProtocl>)getAuthVehiclesWithIdentity:(NSInteger)identity
+                                               vinCode:(NSString *)vinCode
                                              onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
                                              onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 

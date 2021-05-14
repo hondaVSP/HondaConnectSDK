@@ -18,10 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * 查询用户所有车辆列表(包含授权车辆)
+ * 查询用户授权车辆列表
  */
-+ (id<HCRpcContextProtocl>) getVehicleListOnSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
-                                          onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
++ (id<HCRpcContextProtocl>) getVehicleListWithIdentity:(NSString *)identity
+                                               vinCode:(NSString *)vinCode
+                                             onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                             onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
 
 /**
