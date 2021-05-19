@@ -40,3 +40,5 @@ extern NSString *kHCNotificationUpdateTeamName;
 extern NSString *kHCNotificationUpdateTeamMembers;
 /// 队长手动解散队伍
 extern NSString *kHCNotificationCaptainDissolveTeam;
+/// 断开连接
+extern NSString *kHCNotificationDisconnectSocketService;
