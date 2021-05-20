@@ -71,6 +71,8 @@ NS_ASSUME_NONNULL_BEGIN
                                              onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
                                              onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
+/**注销车联网服务*/
++ (id<HCRpcContextProtocl>)releaseVehicleServiceWithVinCode:(NSString *)vinCode idNumber:(NSString *)idNumber onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 @end
 
 NS_ASSUME_NONNULL_END
