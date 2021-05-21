@@ -13,6 +13,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HCUtility : NSObject
+
+/**是否是真实身份证号*/
++ (BOOL)isRealIdNumber:(NSString *)idNumber;
+
 /**获取今天是周几*/
 + (NSInteger)getWeekDayFordate;
 
