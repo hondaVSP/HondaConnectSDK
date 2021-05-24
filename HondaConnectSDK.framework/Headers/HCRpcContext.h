@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setInvoke:(NSString *)uri args:(NSDictionary *)args method:(HCRpcRequestMethod)method onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFail:(void (^)(id<HCRpcContextProtocl>))failBlock encrypt:(BOOL)encrypt decrypt:(BOOL)decrypt;
 
 - (BOOL)invoke;
+/**慢网关调用*/
+- (BOOL)filegateWayInvoke;
 
 - (BOOL)appInvoke;
 

@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, copy) NSString *gateway;
 
+/**慢网关地址*/
+@property (nonatomic, copy) NSString *fileGateWay;
+
 /**
  * 超时时间(默认15s)
  */
@@ -55,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
  * 更新网关地址(SDK调用者使用)
  */
 + (void) updateHttpGateway:(NSString *)gateway;
+/**更新慢网关地址 sdk调用*/
++ (void)updateFileGateWay:(NSString *)filegateWay;
 
 /**
  * 更新请求头(SDK使用者调用)

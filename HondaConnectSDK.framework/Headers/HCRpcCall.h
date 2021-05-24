@@ -64,6 +64,9 @@ typedef NS_ENUM(NSInteger, HMNetworkStatus) {
  */
 + (BOOL)invoke:(HCRpcContext *)context;
 
+/**慢网管执行请求 GHAC SDK调用*/
++ (BOOL)fileWayInvoke:(HCRpcContext *)context;
+
 /**
  * 使用相应的Host执行请求
  * GHAC SDK调用

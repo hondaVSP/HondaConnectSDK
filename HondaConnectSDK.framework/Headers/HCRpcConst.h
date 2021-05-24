@@ -18,7 +18,8 @@
 //#define HTTP_SERVER_GATEWAY         @"https://vsp-integration.reachstar.com:30191/"
 #define HTTP_SERVER_GATEWAY_FORMAL      @"https://ghac-api-gateway.hynex.com.cn:443/"
 #define HTTP_SERVER_GATEWAY_SYSTEM      @"https://openapi-show.reachstar.com:555/"
-
+#define HTTP_SERVICE_FILEGATEWAY_FORMAL @"https://ghac-api-file-gateway.hynex.com.cn"
+#define HTTP_SERVICE_FILEGATEWAY_SYSTEM @"https://vsp-show.reachstar.com:777"
 
 
 
