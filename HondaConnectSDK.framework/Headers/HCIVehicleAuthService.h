@@ -73,6 +73,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**注销车联网服务*/
 + (id<HCRpcContextProtocl>)releaseVehicleServiceWithVinCode:(NSString *)vinCode idNumber:(NSString *)idNumber onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/// 查看我的所有车辆列表
++ (id<HCRpcContextProtocl>)getAllVehicles:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+
+/// 根据vinCode判断是否可以购买该商品
+/// @param vinCode 车机码
+/// @param productType 商品类型
+/// @param productSn 商品编号
+/// @param successBlock <#successBlock description#>
+/// @param failureBlock <#failureBlock description#>
++ (id<HCRpcContextProtocl>)checkBuyProductWithVinCode:(NSString *)vinCode
+                                          productType:(NSString *)productType
+                                            productSn:(NSString *)productSn
+                                            onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                            onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
