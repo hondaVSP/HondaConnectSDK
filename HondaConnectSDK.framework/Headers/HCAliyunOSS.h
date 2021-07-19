@@ -29,14 +29,8 @@ typedef void(^OSSFailure)(NSError *error);
                           bucketName:(NSString *)bucketName
                            objectKey:(NSString *)objectKey;
 
-//OSS追加文件上传
-- (void)oss_uploadAppendObjectASync:(NSData *)data
-                         bucketName:(NSString*)bucketName
-                          objectKey:(NSString*)objectKey
-                           progress:(OSSUploadProgress)progress
-                             finish:(OSSUploadFinish)finish;
 
-//OSS同步文件上传
+//OSS同步文件上传(ossData)
 + (void)uploadAliyunOSSWithData:(NSData *)data
                   tokenResponse:(HCAliyunOSSTokenResponse *)tokenResponse
                        progress:(OSSUploadProgress)progress

@@ -40,7 +40,7 @@
 #define COLOR_TEXT_F5A623   [UIColor colorWithHexString:@"f5a623"]
 #define COLOR_TEXT_72A7E1   [UIColor colorWithHexString:@"72a7e1"]
 #define COLOR_TEXT_0C54A6   [UIColor colorWithHexString:@"0c54a6"]
-#define COLOR_TEXT_CC0000   [UIColor colorWithHexString:@"cc0000"]
+#define COLOR_TEXT_E50020   [UIColor colorWithHexString:@"e50020"]
 #define COLOR_EEEEEE        [UIColor colorWithHexString:@"eeeeee"]
 
 
@@ -54,7 +54,7 @@
 #define COLOR_ICON_69DEB5   [UIColor colorWithHexString:@"69deb5"]
 #define COLOR_ICON_0551A4   [UIColor colorWithHexString:@"0551a4"]
 #define COLOR_ICON_0C54A6   [UIColor colorWithHexString:@"0c54a6"]
-#define COLOR_ICON_CC0000   [UIColor colorWithHexString:@"cc0000"]
+#define COLOR_ICON_E50020   [UIColor colorWithHexString:@"e50020"]
 
 
 #pragma mark -  ================  文字规范  ================
