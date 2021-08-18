@@ -94,6 +94,12 @@ NS_ASSUME_NONNULL_BEGIN
                                     onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
                                     onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
+/**设置车辆设置页ETC服务开关*/
++ (id<HCRpcContextProtocl>)setEtcStatusOn:(NSInteger)on
+                                  vinCode:(NSString *)vinCode
+                                onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
+                                onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
 /**设置车辆设置页消息推送开关*/
 + (id<HCRpcContextProtocl>)setMessageSwitchOn:(NSInteger)on
                                           key:(NSString *)key

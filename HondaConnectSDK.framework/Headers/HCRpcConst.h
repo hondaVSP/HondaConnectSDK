@@ -37,6 +37,10 @@
 #define HTTP_REQUEST_CODE_TOKEN_ILLEGAL         @"100018"
 /// 头部token格式不正确
 #define HTTP_REQUEST_CODE_TOKEN_FORMAT          @"100020"
+// MARK: - 请求令牌无效
+#define HTTP_REQUEST_CODE_TOKEN_INVALID          @"100015"
+// MARK: - refreshToken无效
+#define HTTP_REQUEST_CODE_TOKEN_UNAVAILABLE      @"100011"
 /// 用户未注册
 #define HTTP_REQUEST_CODE_USER_UNREGISTER       @"300001"
 

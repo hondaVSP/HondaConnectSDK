@@ -76,6 +76,8 @@ typedef NS_ENUM(NSInteger, HCRpcRequestMethod) {
 
 @property (nonatomic, strong, readonly) NSMutableArray<HCRpcContext*> *caches;
 
+@property (atomic, assign) BOOL refreshing;
+
 + (HCRpcCaches *)shareInstance;
 
 /**
