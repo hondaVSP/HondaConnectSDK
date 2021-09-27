@@ -24,8 +24,12 @@ extern NSString *kHCNotificationCarControlSuccess;
 extern NSString *kHCNotificationCarControlFailure;
 
 ///// 默认车辆变化通知
-//extern NSString *kNotificationDefaultVehicleChanged;
 
+extern NSString *kHCNotificationDefaultVehicleChanged;
+/**刷新充电首页*/
+extern NSString *kHCNotificationRefreshChargePage;
+/**刷新31AA空调首页*/
+extern NSString *kHCNotificationRefreshAirPage;
 
 #pragma mark - 地理围栏相关通知
 /// 发送搜索结果给设置围栏页通知

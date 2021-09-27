@@ -167,6 +167,16 @@ NS_ASSUME_NONNULL_BEGIN
                                                 onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock
                                                 onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
+/**获取batteryCare状态*/
++ (id<HCRpcContextProtocl>)checkBatteryCareStateWithVinCode:(NSString *)vinCode onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/// 获取batteryCare柱状图数据
+/// @param type 1:七天, 2: 十四天
++ (id<HCRpcContextProtocl>)checkBatteryCareRecordWithType:(NSInteger)type vinCode:(NSString *)vinCode onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/**空调延长10分钟*/
++ (id<HCRpcContextProtocl>)airExtendTenMinutesWithVinCode:(NSString *)vinCode userId:(NSString *)userId onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
