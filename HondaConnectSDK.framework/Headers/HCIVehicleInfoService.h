@@ -177,6 +177,25 @@ NS_ASSUME_NONNULL_BEGIN
 /**空调延长10分钟*/
 + (id<HCRpcContextProtocl>)airExtendTenMinutesWithVinCode:(NSString *)vinCode userId:(NSString *)userId onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
+/**获取预约空调定时列表*/
++ (id<HCRpcContextProtocl>)checkAppointmentAirListWithVinCode:(NSString *)vinCode userId:(NSString *)userId onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+
+/// 添加预约空调任务
+/// @param weekdays 周期
+/// @param time 出发时间
++ (id<HCRpcContextProtocl>)insertAppointmentAirWithVinCode:(NSString *)vinCode userId:(NSString *)userId time:(NSString *)time weekdays:(NSArray *)weekdays onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/// 删除预约空调任务
+/// @param taskId 任务ID
+/// @param taskNo 任务No
++ (id<HCRpcContextProtocl>)deleteAppointmentAirWithTaskId:(NSString *)taskId taskNo:(NSString *)taskNo vinCode:(NSString *)vinCode userId:(NSString *)userId onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/// 修改预约空调任务
+/// @param taskId 任务ID
+/// @param taskNo 任务No
++ (id<HCRpcContextProtocl>)updateAppointmentAirWithTaskId:(NSString *)taskId taskNo:(NSString *)taskNo vinCode:(NSString *)vinCode userId:(NSString *)userId onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
