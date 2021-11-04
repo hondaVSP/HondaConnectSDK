@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**慢网管执行请求 GHAC SDK调用*/
 + (BOOL)fileWayInvoke:(HCRpcContext *)context;
 
+/// /**慢网管执行请求 GHAC SDK调用*/
+/// @param timeout 超时时间
++ (BOOL)fileWayInvoke:(HCRpcContext *)context timeout:(NSInteger)timeout;
+
 /**
  * 使用相应的Host执行请求
  * GHAC SDK调用
