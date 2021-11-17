@@ -194,7 +194,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 修改预约空调任务
 /// @param taskId 任务ID
 /// @param taskNo 任务No
-+ (id<HCRpcContextProtocl>)updateAppointmentAirWithTaskId:(NSString *)taskId taskNo:(NSString *)taskNo vinCode:(NSString *)vinCode userId:(NSString *)userId onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
++ (id<HCRpcContextProtocl>)updateAppointmentAirWithTaskId:(NSString *)taskId taskNo:(NSString *)taskNo vinCode:(NSString *)vinCode userId:(NSString *)userId updateParameters:(NSDictionary *)parameters onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
 @end
 
