@@ -196,6 +196,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param taskNo 任务No
 + (id<HCRpcContextProtocl>)updateAppointmentAirWithTaskId:(NSString *)taskId taskNo:(NSString *)taskNo vinCode:(NSString *)vinCode userId:(NSString *)userId updateParameters:(NSDictionary *)parameters onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
 
+/**解绑车辆前校验是个有未完成充电订单*/
++ (id<HCRpcContextProtocl>)checkChargingOrderBeforeVehicleReleasingWithVinCode:(NSString *)vinCode onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
+/**获取车联网安全解决方案用户状态*/
++ (id<HCRpcContextProtocl>)checkVehicleSecuritySolutionStateWithVinCode:(NSString *)vinCode onSuccess:(void (^)(id<HCRpcContextProtocl>))successBlock onFailure:(void (^)(id<HCRpcContextProtocl>))failureBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
