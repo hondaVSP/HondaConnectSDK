@@ -8,6 +8,8 @@
 
 #import <MJRefresh/MJRefreshStateHeader.h>
 #import <MMMaterialDesignSpinner/MMMaterialDesignSpinner.h>
+#import <MJRefresh/UIView+MJExtension.h>
+#import <MJRefresh/UIScrollView+MJRefresh.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

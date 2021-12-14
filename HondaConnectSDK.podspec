@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HondaConnectSDK'
-  s.version = '0.1.33'
+  s.version = '0.1.34'
   s.summary          = 'HondaConnectSDK'
 
 # This description is used to generate tags and improve search results.
